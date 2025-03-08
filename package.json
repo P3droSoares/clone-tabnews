@@ -6,7 +6,9 @@
   "scripts": {
     "start:db": "docker compose -f infra/compose.yaml up -d --force-recreate",
     "stop:db": "docker compose -f infra/compose.yaml down",
-    "dev": "npm run start:db && next dev"
+    "dev": "npm run start:db && next dev",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "author": "",
   "license": "MIT",
