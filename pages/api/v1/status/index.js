@@ -1,9 +1,9 @@
-import database from "infra/database";
-
 async function status(request, response) {
-  const updateAt = new Date();
+  const updateAt = new Date().toISOString();
 
-  response.status(200).json({ chave: "Tudo certo!" });
+  return response.status(200).json({
+    update_at: updateAt,
+  });
 }
 
 export default status;

@@ -3,6 +3,6 @@ services:
   database:
     image: "postgres:16.0-alpine3.18"
     env_file:
-      - ../.env
+      - ../.env.develoment
     ports:
-      - "5432:5432"
+      - "5000:5432"
